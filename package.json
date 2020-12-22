@@ -1,0 +1,11 @@
+{
+  "name": "sequelize-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Mehren <git@herrmehren.de>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "5"
+  }
+}
