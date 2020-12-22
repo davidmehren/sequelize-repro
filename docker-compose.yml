@@ -1,18 +1,13 @@
 version: '2'
 
 services:
-  # MySQL example
-  # Most of the documentation that applies to PostgreSQL applies also to MySQL
   database:
-      # You should be able to upgrade MySQL without problems
-      # but to make sure no even when a problem appears you
-      # should have a backup
-      image: mariadb:10
-      environment:
-        - MYSQL_USER=sequelize_test
-        - MYSQL_PASSWORD=lollerskates
-        - MYSQL_DATABASE=sequelize_test
-        - MYSQL_ALLOW_EMPTY_PASSWORD=true
-      restart: always
-      ports:
-      - 3306:3306
+    image: mariadb:10
+    environment:
+      - MYSQL_USER=sequelize_test
+      - MYSQL_PASSWORD=lollerskates
+      - MYSQL_DATABASE=sequelize_test
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    restart: always
+    ports:
+    - 3306:3306
